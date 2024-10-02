@@ -11,6 +11,14 @@ public class Set2 {
         return fibo(n-1)+fibo(n-2);
     }
 
+    static int facto(int n){
+        if(n==2){
+            return 2;
+        }
+
+        return n*facto(n-1);
+    }
+
 
 
 
@@ -41,5 +49,10 @@ public class Set2 {
         System.out.println("\n");
 
         System.out.println("and fibo num at "+a+"th possition is " +fibo(a-1));
+
+
+        // now facto
+
+        System.out.println("facto of 7 is "+facto(a-3));
     }
 }
